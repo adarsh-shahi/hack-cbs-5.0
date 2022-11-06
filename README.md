@@ -1,18 +1,18 @@
 # hack-cbs-5.0
 
-# ------------------------------Team Introduction------------------------------
+# -----------------Team Introduction--------------------
 
 Team Name :- Code Linguists
 
 Name :- 1.] Harsh Jha
               2.] Adarsh Shahi
 
-# ------------------------------Problem Statement-------------------------------
+# ---------------Problem Statement------------------
  In todays current senerio Hospitals are overcrowded with patients and also their past medical records  are not stored due to which doctors face problem in diagnosing patients due to lack of past medical records .
  Also hospitals irregularity in maintaining the count of equipments they fall short hand .
  Ambulance authorities charge , unfair amount .
 
- # ----------------------------------Solutions------------------------------------
+ # ------------------Solutions-------------------------
 
 Before visiting a hospital, the patient will book an appointment
  1.] Internet users - Book an appointment online as per their hospital preference  via the website or mobile app .
