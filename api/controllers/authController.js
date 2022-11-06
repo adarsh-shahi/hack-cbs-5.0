@@ -83,5 +83,5 @@ const protect = async (req, res, next) => {
 };
 
 
-export {signup, login };
+export {signup, login , protect};
 
