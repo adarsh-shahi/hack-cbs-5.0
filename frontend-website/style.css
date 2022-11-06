@@ -1,0 +1,370 @@
+
+* {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+}
+html {
+	/* setting 1 rem to 10px */
+	/* font-size: 10px;  */
+	/* default is 16px we want to set it at 10px, so */
+	font-size: 62.5%;
+	overflow-x: hidden;
+  background-color: #E3FDFD;
+}
+
+body {
+	font-family: "Rubik", sans-serif;
+	line-height: 1;
+	font-weight: 400;
+	color: #666;
+	overflow-x: hidden;
+}
+
+/* ************************ */
+/** 1. GENERAL REUSABLE COMPONENTS **/
+/* ************************ */
+
+.container {
+	max-width: 130rem;
+	margin: 0 auto;
+	padding: 0 3.2rem;
+}
+
+.grid {
+	display: grid;
+	row-gap: 6rem;
+	column-gap: 6.4rem;
+	/* margin-bottom: 9.6rem; */
+}
+
+/* .grid:last-child{
+	margin-bottom: 0;
+} */
+
+.grid:not(:last-child) {
+	margin-bottom: 9.6rem;
+}
+
+.grid--center-v {
+	align-self: center;
+}
+
+.grid--2-cols {
+	grid-template-columns: repeat(2, 1fr);
+}
+
+.grid--3-cols {
+	grid-template-columns: repeat(3, 1fr);
+}
+
+.grid--4-cols {
+	grid-template-columns: repeat(4, 1fr);
+}
+
+.grid--5-cols {
+	grid-template-columns: repeat(5, 1fr);
+}
+
+.heading-primary,
+.heading-secondary,
+.heading-tertiary {
+	font-weight: 700;
+	letter-spacing: -0.5px;
+	color: #555;
+}
+
+.heading-primary {
+	font-size: 5.2rem;
+	line-height: 1.05;
+	margin-bottom: 3.2rem;
+}
+
+.heading-secondary {
+	font-size: 3.6rem;
+	line-height: 1.2;
+	margin-bottom: 3.8rem;
+  text-align: center;
+}
+
+.heading-tertiary {
+	font-size: 3rem;
+	line-height: 1.2;
+	margin-bottom: 3.2rem;
+}
+
+.subheading {
+	display: block;
+	font-size: 1.6rem;
+	font-weight: 500;
+	color: #cf711f;
+	text-transform: uppercase;
+	margin-bottom: 1.6rem;
+	letter-spacing: 0.75px;
+}
+
+.btn--form {
+	background-color: #45260a;
+	color: #fdf2e9;
+	align-self: end;
+	padding: 1.2rem !important;
+}
+
+.btn--form:hover {
+	background-color: #fff;
+	color: #666;
+}
+
+.btn,
+.btn:link,
+.btn:visited {
+	display: inline-block;
+	font-size: 2rem;
+	font-weight: 600;
+	padding: 1.6rem 3.2rem;
+	border-radius: 0.9rem;
+	text-decoration: none;
+	/* PUT TRANSITION ON ORIGINAL STATE */
+	transition: all 0.3s;
+	border: none;
+	cursor: pointer;
+	font-family: inherit;
+}
+
+.btn-full:link,
+.btn-full:visited {
+	background-color: #e67e22;
+	color: #fff;
+}
+
+.btn-full:hover,
+.btn-full:active {
+	background-color: #cf711f;
+}
+
+.btn-outline:link,
+.btn-outline:visited {
+	background-color: #fff;
+	color: #555;
+}
+
+.btn-outline:hover,
+.btn-outline:active {
+	background-color: #fdf2e9;
+	/* border: 0.3rem solid #fff; */
+	box-shadow: inset 0 0 0 0.3rem #fff;
+}
+
+.margin-right-sm {
+	margin-right: 1.6rem !important;
+}
+
+.margin-bottom-md {
+	margin-bottom: 4.8rem !important;
+}
+
+strong {
+	font-weight: 500;
+}
+
+.link:link,
+.link:visited {
+	color: #e67e22;
+	text-decoration: none;
+	border-bottom: 1px solid currentColor;
+	display: inline-block;
+	padding-bottom: 2px;
+	transition: all 0.3s;
+}
+
+.link:hover,
+.link:visited {
+	color: #cf711f;
+	border-bottom: 1px solid transparent;
+}
+
+.center-text {
+	text-align: center;
+}
+
+.list {
+	list-style: none;
+	display: flex;
+	flex-direction: column;
+	gap: 1.6rem;
+}
+
+.list-icon {
+	font-size: 3rem;
+	color: #e67e22;
+}
+
+.list-item {
+	display: flex;
+	align-items: center;
+	gap: 1.6rem;
+	line-height: 1.2;
+}
+
+.border-radius{
+  border-radius: 30px;
+  box-shadow: 2.4rem 2.4rem 4.8rem rgba(0, 0, 0, 0.15);
+}
+
+
+
+.inline{
+  display: inline-block;
+}
+
+/* .border-bottom{
+  border-bottom: 1px solid orange;
+} */
+/* ************************ */
+/** 2. NAVIGATION **/
+/* ************************ */
+
+.main-grid-layout{
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  grid-template-rows: auto 10rem auto;
+  /* grid-template-rows: 10rem 20rem 20rem 40rem; */
+  background-color: #CBF1F5;
+  color: #474747;
+  gap: 3rem;
+  padding: 4rem;
+  margin-top: 5rem;
+}
+
+.dashboard,
+.ambulance-banner,
+.nav-list,
+.related-topics{
+  cursor: pointer;
+}
+
+.ambulance-banner{
+  align-self: center;
+  justify-self: center;
+  padding: 3rem 2rem;     
+  font-size: 3rem;
+  font-weight: 600;
+  background-color: #71C9CE;
+  position: relative;
+}
+
+
+
+.nav-list{
+  background-color: #A6E3E9;
+  grid-row: 1 / 3;
+  font-size: 2.4rem;
+  padding: 3rem 2rem;
+  align-self: start;
+}
+
+.related-topics{
+  background-color: #A6E3E9;
+  grid-row: 3 / 4; 
+  font-size: 2.4rem;
+  padding: 3rem 2rem;
+  align-self: start;
+}
+
+.dashboard{
+  background-color: #A6E3E9 ;
+  grid-row: 1 / 4;
+  font-size: 2.4rem;
+  padding: 3rem 2rem;
+  transition: all 0.6s;
+}
+
+.user-profile{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+
+.isOn + .related-topics + .dashboard{
+  grid-row: 2 / 4;
+}
+
+.articles-head{
+  text-align: center ;
+}
+
+.close-icon{
+  font-size: 3.2rem;
+  position: absolute;
+  top: -2.5%;
+  right: -2%;
+  background-color: #E3FDFD;
+  color: #474747;
+  border-radius: 50%;
+}
+
+.user-icon{
+  font-size: 15rem;
+  align-self: center;
+  justify-self: center;
+}
+
+.general-data{
+  display: flex;
+  flex-direction: column;
+  gap: 2.4rem;
+  align-self: center;
+  justify-self: center;
+}
+
+.line-break-user-profile{
+  margin: 2rem 3rem;
+}
+
+.medical-parameters{
+  font-size: 2rem;
+  align-items: center;
+  justify-items: center;
+}
+
+.checkup{
+  font-size: 2rem;
+  font-weight: 500;
+}
+
+.checkup-values{
+  font-size: 2rem;
+  font-weight: 600;
+}
+
+.checkup, .checkup-values, .latestdate{
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.list-item a{
+  text-decoration: none;
+  color: #555;
+}
+
+/* .nav-active{
+  position: relative;
+  margin-right: 22rem;
+}
+
+.nav-active::before{
+  content: "";
+  position: absolute;
+  top: 0%;
+  left: 0%;
+  background-color: #e67e22;
+  width: 0.5rem;
+  height: 100%;
+  
+} */
+
+.nav-active{
+  background-color: #CBF1F5;
+  border-radius: 4rem;
+  padding: 1rem;
+}

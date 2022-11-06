@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;600;700&display=swap"
+			rel="stylesheet"
+		/>
+    <link rel="stylesheet" href="./general.css" />
+		<link rel="stylesheet" href="./style.css" />
+		<title>Home</title>
+	</head>
+	<body>
+		<div class="container">
+			<div class="main-grid-layout border-radius">
+				<div class="nav nav-list border-radius">
+					<ul class="list">
+						<li class="list-item nav-active border-bottom">Profile</li>
+						<hr />
+						<li class="list-item border-bottom">Appointment</li>
+						<hr />
+            <li class="list-item border-bottom"><a href="./medicalRecords.html">Medical Records</a></li>
+						<hr />
+						<li class="list-item border-bottom">Settings</li>
+					</ul>
+				</div>
+				<strong class="ambulance-banner isOn border-radius"
+					>Book Ambulance
+					<ion-icon class="close-icon" name="close-outline"></ion-icon>
+				</strong>
+
+				<div class="related-topics border-radius">
+					<div>
+						<h2 class="articles-head">Articles</h2>
+						<h3>Heading 1</h3>
+						<p>content</p>
+					</div>
+					<div>
+						<h3>Heading 1</h3>
+						<p>content</p>
+					</div>
+					<div>
+						<h3>Heading 1</h3>
+						<p>content</p>
+					</div>
+				</div>
+				<div class="dashboard border-radius">
+					<div class="user-profile">
+						<ion-icon class="user-icon" name="person-circle-outline"></ion-icon>
+						<div class="general-data">
+							<div class="card">
+								<p class="inline">Name:</p>
+								<p class="inline">Bruce Wayne</p>
+							</div>
+							<div class="card">
+								<p class="inline">Age:</p>
+								<p class="inline">39</p>
+							</div>
+							<div class="card">
+								<p class="inline">Gender:</p>
+
+								<p class="inline">M</p>
+							</div>
+						</div>
+						<div class="general-data">
+							<div class="card">
+								<p class="inline">Blood Gr.:</p>
+								<p class="inline">0-</p>
+							</div>
+							<div class="card">
+								<p class="inline">Height:</p>
+								<p class="inline">6.1 ft</p>
+							</div>
+							<div class="card">
+								<p class="inline">Weight:</p>
+								<p class="inline">80kg</p>
+							</div>
+						</div>
+					</div>
+					<hr class="line-break-user-profile" />
+					<h2 class="heading-secondary">Medical Parameters</h2>
+					<div class="medical-parameters grid grid--3-cols">
+						<div class="checkup">
+              <p>Sugar B/M</p>
+              <p>Sugar A/M</p>
+              <p>Blood Pressure</p>
+              <p>Cholesterol</p>
+              <p>Glucose Lvl</p>
+            </div>
+            <div class="checkup-values">
+              <p>99</p>
+              <p>123</p>
+              <p>100</p>
+              <p>93</p>
+              <p>150</p>
+            </div>
+            <div class="latestdate">
+              <p>45 days ago</p>
+              <p>45 days ago</p>
+              <p>45 days ago</p>
+              <p>45 days ago</p>
+              <p>45 days ago</p>
+            </div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<script
+			type="module"
+			src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+		></script>
+		<script
+			nomodule
+			src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+		></script>
+		<script src="./app.js"></script>
+	</body>
+</html>
