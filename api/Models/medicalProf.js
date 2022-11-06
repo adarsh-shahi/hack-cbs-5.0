@@ -1,0 +1,60 @@
+import {mongoose , Schema} from 'mongoose';  // this can be edited byt he the doctors as well as users .
+
+const medicalRecords = new Schema({
+   sugarAM:[{
+      value:{
+         type:Number,
+         required:false
+      },
+      unit:{
+         type:String,
+         required:false,
+         default:"ml"
+      }
+   }],
+   sugarBM:[{
+      value:{
+         type:Number,
+         required:false
+      },
+      unit:{
+         type:String,
+         required:false,
+         default:"ml"
+      }
+   }],
+   bloodPressure:[{
+      value:{
+         type:Number,
+         required:false
+      },
+      unit:{
+         type:String,
+         required:false,
+         default:"ml"
+      }
+   }],
+   cholesterol:[{
+      value:{
+         type:Number,
+         required:false
+      },
+      unit:{
+         type:String,
+         required:false,
+         default:"ml"
+      }
+   }],
+   glucose:[{
+      value:{
+         type:Number,
+         required:false
+      },
+      unit:{
+         type:String,
+         required:false,
+         default:"ml"
+      }
+   }],
+})
+models.export = mongoose.models('medicalRec', medicalRecords);
