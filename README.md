@@ -5,7 +5,7 @@
 Team Name :- Code Linguists
 
 Team Members :- 1.] Harsh Jha<br>
-                &thinsp:2.] Adarsh Shahi
+ &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;2.] Adarsh Shahi
 
 # ---------------------Problem Statement-----------------------
  In todays current senerio Hospitals are overcrowded with patients and also their past medical records  are not stored due to which doctors face problem in diagnosing patients due to lack of past medical records .
